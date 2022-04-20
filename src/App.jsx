@@ -297,7 +297,7 @@ function App() {
 
       setError(
         `Wrong! The correct answer is ${hr}` ||
-          `Wrong! The correct answer  is ${kr}`
+          `Wrong! The correct answer is ${kr}`
       );
 
       setScore(0);
@@ -315,7 +315,7 @@ function App() {
   }, []);
 
   return (
-    <div className='min-h-screen bg-slate-800 text-white text-center'>
+    <div className='min-h-screen bg-green-800 text-white text-center'>
       <header className='p-6 mb-8'>
         <h1 className='text-2xl font-bold uppercase'>Japanese Quiz</h1>
         <div>
