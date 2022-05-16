@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Quiz from './Quiz';
 
 function App() {
   // const kana = [
@@ -215,36 +216,15 @@ function App() {
   //   setScore(parseInt(localStorage.getItem('score')) || 0);
   //   setHighscore(parseInt(localStorage.getItem('score')) || 0);
   // }, []);
-  // return (
-  //   <div className='min-h-screen bg-green-800 text-white text-center'>
-  //     <header className='p-6 mb-8'>
-  //       <h1 className='text-2xl font-bold uppercase'>Japanese Quiz</h1>
-  //       <div>
-  //         <p>
-  //           {score} / {highscore}
-  //         </p>
-  //       </div>
-  //     </header>
-  //     <div className='text-9xl font-bold mb-8'>
-  //       {kana[current].katakana || kana[current].hirigana}
-  //     </div>
-  //     <div className='mb-8'>
-  //       <form onSubmit={handleSubmit}>
-  //         <input
-  //           type='text'
-  //           onChange={handleChange}
-  //           value={input}
-  //           className='block w-24 bg-transparent border-b-2 border-b-white mx-auto outline-none text-center text-6xl pb-2'
-  //         />
-  //       </form>
-  //     </div>
-  //     {error && (
-  //       <div className='text-2xl font-bold uppercase'>
-  //         <p>{error}</p>
-  //       </div>
-  //     )}
-  //   </div>
-  // );
+  return (
+    <div>
+      <Routes>
+        <Route path='/' element={<Quiz />} />
+        {/* <Route path='about' element={<Quiz />} /> */}
+        {/* <Route path="contact" element={ <Contact/> } /> */}
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
