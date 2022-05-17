@@ -1,7 +1,7 @@
 import React from 'react';
 
-function hirigana() {
+function Hirigana() {
   return <div>This is the hirigana page</div>;
 }
 
-export default hirigana;
+export default Hirigana;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-function katakana() {
+function Katakana() {
   return <div>katakana</div>;
 }
 
-export default katakana;
+export default Katakana;
