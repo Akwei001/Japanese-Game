@@ -1,4 +1,4 @@
-const kana = [
+const Kana = [
   { romaji: 'a', hirigana: 'あ' },
   { romaji: 'i', hirigana: 'い' },
   { romaji: 'u', hirigana: 'う' },
@@ -145,4 +145,4 @@ const kana = [
   { romaji: 'v', katakana: 'ヴ' },
 ];
 
-export default kana;
+export default Kana;
