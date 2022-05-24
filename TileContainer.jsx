@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Kana from './src/libs/data';
 import Tile from './Tile';
 
@@ -10,6 +10,7 @@ function TileContainer() {
       {tile.map(function (item) {
         return (
           <Tile
+            key={item.kanaId}
             hirigana={item.hirigana}
             katakana={item.katakana}
             romaji={item.romaji}
