@@ -5,8 +5,8 @@ import Tile from './Tile';
 function TileContainer() {
   const [tile, setTile] = useState(Kana);
   return (
-    <div>
-      <p>TileContainer</p>
+    <div className=''>
+      <p>Tile Container</p>
       {tile.map(function (item) {
         return (
           <Tile

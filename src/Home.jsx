@@ -7,6 +7,7 @@ function Home() {
       <h1>Test your knowledge</h1>
       <Link to='Quiz'>Click to view the Quiz</Link>
       <Link to='Hirigana'>This page shows Hirigana</Link>
+      <Link to='Katakana'>This page shows Katakana</Link>
     </div>
   );
 }
