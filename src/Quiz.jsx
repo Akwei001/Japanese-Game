@@ -238,8 +238,10 @@ function Quiz() {
         </div>
       </header>
 
-      <div className='text-9xl font-bold mb-8'>
-        {kana[current].katakana || kana[current].hirigana}
+      <div className='flex justify-center'>
+        <div className='bg-white text-black text-9xl font-bold mb-8 rounded shadow-md'>
+          {kana[current].katakana || kana[current].hirigana}
+        </div>
       </div>
 
       <div className='mb-8'>
