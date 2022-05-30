@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Quiz() {
   const kana = [
@@ -230,7 +231,13 @@ function Quiz() {
   return (
     <div className='min-h-screen bg-green-800 text-white text-center'>
       <header className='p-6 mb-8'>
-        <h1 className='text-2xl font-bold uppercase'>Japanese Quiz</h1>
+        <h1 className='text-2xl font-bold uppercase'>
+          Japanese Quiz
+          <div className='flex'>
+            <Link to='/'>Home</Link>
+          </div>
+        </h1>
+
         <div>
           <p>
             {score} / {highscore}
