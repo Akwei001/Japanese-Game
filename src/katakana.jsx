@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import TileContainer from '../TileContainer';
 const katakanaTile = [
   { id: 73, romaji: 'a', katakana: 'ア' },
@@ -81,6 +81,9 @@ function Katakana() {
   return (
     <div className='min-h-screen bg-green-800 text-white text-center text-2xl font-bold uppercase'>
       <p>Katakana page</p>
+      <div className='flex'>
+        <Link to='/'>Home</Link>
+      </div>
       {/* <TileContainer /> */}
       <div className='grid grid-cols-5 gap-4 m-10'>
         {ktile.map((tile) => (
