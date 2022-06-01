@@ -82,12 +82,12 @@ function Katakana() {
     <div className='min-h-screen bg-green-800 text-white text-center text-2xl font-bold uppercase'>
       <p>Katakana page</p>
       {/* <TileContainer /> */}
-      <div className='flex'>
+      <div className='grid grid-cols-5 gap-4 m-10'>
         {ktile.map((tile) => (
           <div key={tile.id}>
-            <div className='bg-white text-black text-9xl font-bold mb-8 rounded shadow-md'>
-              {tile.katakana}
-              {tile.romaji}
+            <div className=' bg-white text-red-500 text-6xl font-bold rounded shadow-md w-18 h-18'>
+              <div className='py-20'>{tile.katakana}</div>
+              <div className='py-20'>{tile.romaji}</div>
             </div>
           </div>
         ))}
