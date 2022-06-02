@@ -79,7 +79,7 @@ const katakanaTile = [
 function Katakana() {
   const [ktile, setKtile] = useState(katakanaTile);
   return (
-    <div className='min-h-screen bg-green-800 text-white text-center text-2xl font-bold uppercase'>
+    <div className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center text-2xl font-bold uppercase'>
       <p>Katakana page</p>
       <div className='flex'>
         <Link to='/'>Home</Link>
