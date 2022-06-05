@@ -81,7 +81,7 @@ function Hirigana() {
   const [htile, setHtile] = useState(hiriganaTile);
   return (
     <div
-      className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 bg-green-800 text-white text-center text-2xl 
+      className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center text-2xl 
     font-bold uppercase'
     >
       <p>Hirigana page</p>
