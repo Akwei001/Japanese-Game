@@ -231,11 +231,16 @@ function Quiz() {
   return (
     <div className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center'>
       <header className='p-6 mb-8'>
-        <h1 className='text-2xl font-bold uppercase'>
-          Japanese Quiz
-          <div className='flex'>
-            <Link to='/'>Home</Link>
+        <h1 className=' flex justify-between text-4xl font-bold'>
+          <div className='inline-block p-[2px] rounded-full bg-gradient-to-r from-pink-500  to-purple-500 hover:text-white active:text-opacity-75 focus:outline-none focus:ring'>
+            <Link
+              to='/'
+              className='block px-8 py-3 text-sm font-medium  rounded-full hover:bg-transparent'
+            >
+              Home
+            </Link>
           </div>
+          <div className=''>Quiz</div>
         </h1>
 
         <div>

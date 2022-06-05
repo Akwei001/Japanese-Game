@@ -80,13 +80,17 @@ const hiriganaTile = [
 function Hirigana() {
   const [htile, setHtile] = useState(hiriganaTile);
   return (
-    <div
-      className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center text-2xl 
-    font-bold uppercase'
-    >
-      <p>Hirigana page</p>
-      <div className='flex'>
-        <Link to='/'>Home</Link>
+    <div className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center text-2xl'>
+      <div className='flex justify-between'>
+        <Link
+          to='/'
+          className='inline-block p-[2px] rounded-full bg-gradient-to-r from-pink-500  to-purple-500 hover:text-white active:text-opacity-75 focus:outline-none focus:ring'
+        >
+          Home
+        </Link>
+        <p className=' font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-10'>
+          Hiragana
+        </p>
       </div>
       <div className='grid grid-cols-5 gap-4 m-10'>
         {htile.map((tile) => (
