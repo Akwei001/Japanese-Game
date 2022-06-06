@@ -79,16 +79,27 @@ const katakanaTile = [
 function Katakana() {
   const [ktile, setKtile] = useState(katakanaTile);
   return (
-    <div className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center text-2xl font-bold uppercase'>
-      <p>Katakana page</p>
-      <div className='flex'>
-        <Link to='/'>Home</Link>
-      </div>
-      {/* <TileContainer /> */}
+    <div className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center'>
+      <header className='p-6 mb-8'>
+        <div className='flex justify-between'>
+          <div className=' p-[2px] rounded-full bg-gradient-to-r from-pink-500  to-purple-500 hover:text-white active:text-opacity-75 focus:outline-none focus:ring'>
+            <Link
+              to='/'
+              className='block px-8 py-3 text-sm font-medium  rounded-full hover:bg-transparent'
+            >
+              Home
+            </Link>
+          </div>
+          <div className=' font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
+            Katakana
+          </div>
+        </div>
+      </header>
+
       <div className='grid grid-cols-5 gap-4 m-10'>
         {ktile.map((tile) => (
           <div key={tile.id}>
-            <div className=' bg-white text-red-500 text-6xl font-bold rounded shadow-md w-18 h-18'>
+            <div className=' bg-white text-black text-6xl font-bold rounded shadow-md w-18 h-18'>
               <div className='py-20'>{tile.katakana}</div>
               <div className='py-20'>{tile.romaji}</div>
             </div>
