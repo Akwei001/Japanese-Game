@@ -1,9 +1,9 @@
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Quiz from './Quiz';
-import Hirigana from './Hirigana';
-import Katakana from './Katakana';
-import Home from './Home';
+import Quiz from '../src/Quiz';
+import Hirigana from '../src/Hirigana';
+import Katakana from '../src/Katakana';
+import Home from '../src/Home';
 
 function App() {
   return (

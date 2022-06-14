@@ -80,19 +80,19 @@ const hiriganaTile = [
 function Hirigana() {
   const [htile, setHtile] = useState(hiriganaTile);
   return (
-    <div className='min-h-screen bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white text-center'>
+    <div className='min-h-screen text-center text-white bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900'>
       <header className='p-6 mb-8'>
         <div className='flex justify-between'>
           <div className=' p-[2px] rounded-full bg-gradient-to-r from-pink-500  to-purple-500 hover:text-white active:text-opacity-75 focus:outline-none focus:ring'>
             <Link
               to='/'
-              className='block px-8 py-3 text-sm font-medium  rounded-full hover:bg-transparent'
+              className='block px-8 py-3 text-sm font-medium rounded-full hover:bg-transparent'
             >
               Home
             </Link>
           </div>
-          <div className=' font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
-            Katakana
+          <div className='text-4xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
+            Hiragana
           </div>
         </div>
       </header>
@@ -100,7 +100,7 @@ function Hirigana() {
       <div className='grid grid-cols-5 gap-4 m-10'>
         {htile.map((tile) => (
           <div key={tile.id}>
-            <div className=' bg-white text-black text-6xl font-bold rounded shadow-md w-18 h-18'>
+            <div className='text-6xl font-bold text-black bg-white rounded shadow-md  w-18 h-18'>
               <div className='py-20'>{tile.hirigana}</div>
               <div className='py-20'>{tile.romaji}</div>
             </div>
