@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Quiz from './Quiz';
 import Hirigana from './Hirigana';
-import Katakana from './katakana';
+import Katakana from './Katakana';
 import Home from './Home';
 
 function App() {

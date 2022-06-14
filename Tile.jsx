@@ -5,7 +5,7 @@ function Tile({ hirigana, katakana, romaji }) {
   console.log(romaji);
   return (
     <div className=''>
-      <div className='border-solid border border-white-600 h-20 w-20'>
+      <div className='w-20 h-20 border border-solid border-white-600'>
         {hirigana}
         {/* {hiriganaTile} */}
       </div>
